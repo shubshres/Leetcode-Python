@@ -19,4 +19,4 @@ class Solution(object):
         return []
 
 
-print(Solution().twoSum([2, 7, 11, 15], 18)
+print(Solution().twoSum([2, 7, 11, 15], 18))
