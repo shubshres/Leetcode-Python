@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs):
         anagram = defaultdict(list)  # mapping charcount to list of anagrams
 
         # go through each string that we are given
