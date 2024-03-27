@@ -1,0 +1,13 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        valuesSet = set()
+        for i in nums:
+            if i in valuesSet:
+                return True
+            else:
+                valuesSet.add(i)
+        return False
+        
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)

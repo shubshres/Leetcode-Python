@@ -422,10 +422,11 @@ print(outer("a", "b"))  # abc
 # can modify objects but not reassign values unless use nonlocal keyword
 def double(arr, val):
     def helper():
-        for i, n in enumerate(arr):
+        for i, n in enumerate(arr): # n is a copy of the value
             arr[i] *= val
         # will only modify val in the helper function 
         # val *= 2
+        
         
         # this will modify the val outside the helper scope: 
         nonlocal val
