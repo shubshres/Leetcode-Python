@@ -18,3 +18,6 @@ class Solution:
                 stack.append(int(c))
 
         return stack[0]
+
+# Time Complexity :  O(N)
+# Space Complexity:  O(N)
