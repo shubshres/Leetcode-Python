@@ -19,3 +19,6 @@ def buy_and_sell(arr):
 
 # Driver function
 print(buy_and_sell([9, 11, 8, 5, 7, 10]))
+
+# Time complexity: O(n)
+# Space complexity: O(1)

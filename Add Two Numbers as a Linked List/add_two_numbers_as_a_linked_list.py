@@ -39,3 +39,6 @@ answer = Solution().addTwoNumbers(l1, l2)
 while answer:
   print(answer.val, end=' ')
   answer = answer.next
+
+# Time complexity: O(n)
+# Space complexity: O(n)
