@@ -1,26 +1,16 @@
-from collections import defaultdict
-
-
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        anagramMap = defaultdict(int)
-
-        if len(s) != len(t):
-            return False
-        else:
-            for charI in s:
-                anagramMap[charI] += 1
-
-            for charT in t:
-                anagramMap[charT] += 1
-
-            print(anagramMap)
-
-            for i in anagramMap:
-                if (anagramMap[i] % 2) != 0:
-                    return False
-                
-            return True
+    def dailyTemperatures(self, temperatures):
+        count = 1
+        stack = []
+        for i, t in enumerate(temperatures):
+            if i < len(temperatures) - 1:
+                if t < temperatures[i + 1]:
+                    stack.append(count)
+                    count = 1
+                else:
+                    count += 1
+                    stack.append(count)
+        return stack
 
 
-print(Solution.isAnagram(Solution, "aa", "bb"))
+print(Solution.dailyTemperatures(Solution, [73,74,75,71,69,72,76,73]))
